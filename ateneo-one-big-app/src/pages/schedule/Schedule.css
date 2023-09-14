@@ -1,0 +1,105 @@
+#creator-wrapper{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#schedule-creator-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 160px;
+    column-gap: 48px;
+}
+
+#schedule-creator-container .timetable,
+#schedules-container .timetable {
+  justify-self: flex-end;
+}
+
+#creator-text{
+  margin: 0 0 48px;
+}
+
+#return{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #4A4A4A;
+
+    margin-bottom: 16px;
+}
+
+#schedule-name{
+    font-family: 'Viga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #000000;
+}
+
+#subtitle{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+.class-card{
+    margin: 24px;
+}
+
+#delete-sched{
+    text-align: center;
+}
+
+.schedule-content {
+  margin: 0 0 48px;
+}
+
+.schedule-content > * {
+  margin: 0 0 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  #schedule-creator-container,
+  #schedules-container {
+    padding: 80px 64px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #schedule-creator-container,
+  #schedules-container {
+    padding: 80px 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #schedule-creator-container,
+  #schedules-container {
+    padding: 72px 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 48px;
+  }
+
+  #schedule-creator-container .timetable,
+  #schedules-container .timetable {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #schedule-creator-container,
+  #schedules-container {
+    padding: 72px 24px;
+  }
+}

@@ -1,0 +1,145 @@
+.timetable {
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: white;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content;
+    grid-auto-columns: 1fr;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    width: 100%;
+    max-width: 448px;
+    justify-content: space-between;
+    overflow: scroll;
+    overflow-x: hidden;
+    min-height: 560px;
+}
+
+.timetable::-webkit-scrollbar {
+    width: 0px;
+}
+
+.timetable > * {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 24px 1fr;
+    line-height: 16px;
+}
+
+.timetable .times {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.timetable .blocks {
+  position: relative;
+}
+
+.timetable .time-column .times p {
+  padding-right: 8px;
+  padding-left: 4px;
+  border-top: 2px solid black;
+}
+
+.day-column {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.day-column h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.day-schedule {
+    margin-top: -8px;
+    position: relative;
+}
+
+.timeblock {  
+    position: absolute;
+    border-radius: 4px;
+    padding: 3px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    font-weight: normal;
+    width: 100%;
+
+    overflow-y: hidden;
+}
+
+.lavender {
+    background: #ACC1FF;
+}
+
+.blue {
+    background: #C7EEFF;
+}
+
+.red {
+    background: #FFAEAE;
+}
+
+.yellow {
+    background: #FFEC94;
+}
+
+.green {
+    background: #B0E57C;
+}
+
+.pink {
+    background: #FFDBDB;
+}
+
+.class-info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.class-info p:first-child {
+    font-weight: 700;
+}
+
+.class-info p {
+  word-break: break-word;
+}
+
+.start-time, .end-time {
+    /* Desktop/Body/XXS/Regular */
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */  
+    /* Black */
+
+    color: #000000;
+}
+
+.start-time {
+    text-align: left;
+}
+
+.end-time {
+    text-align: right;
+}
