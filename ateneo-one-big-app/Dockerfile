@@ -20,5 +20,5 @@ COPY . .
 EXPOSE 4173
 RUN npm run build
 
-RUN npm run preview 
+CMD [ "npm", "run" ,"preview"] 
 
