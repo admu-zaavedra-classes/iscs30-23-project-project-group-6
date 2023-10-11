@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:18
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -17,6 +17,8 @@ COPY . .
 
 
 
-EXPOSE 5173
-CMD ["npm", "run", "dev"]
+EXPOSE 4173
+RUN npm run build
+
+RUN npm run preview 
 
