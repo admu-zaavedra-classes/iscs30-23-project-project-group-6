@@ -20,7 +20,7 @@ import ErrorPage from './pages/error'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/login" element={<LoginPage />} />
+      
 
       <Route path="/" element={<PageLayout />}>
         <Route index element={<HomePage />} />

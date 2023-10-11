@@ -5,7 +5,7 @@ import * as Auth from './../../context/Auth'
 import { getAuth, signOut } from 'firebase/auth';
 
 function Header() {
-  const user = useContext(Auth.Context)
+  //const user = useContext(Auth.Context)
 
   function onProfileClick() {
     signOut(getAuth())
@@ -67,9 +67,9 @@ function Header() {
             <Link to = 'about'>
                 <button className="lastbutton">About</button>
             </Link>
-            <div className="profile-container" onClick={onProfileClick}>
+            {/* <div className="profile-container" onClick={onProfileClick}>
                 <img id ="desktop-img" src={user.photoURL} alt="Profile" />
-            </div>
+            </div> */}
         </div>
     </div>
     </header>

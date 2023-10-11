@@ -7,11 +7,10 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 
 import './Login.css'
 
-const provider = new GoogleAuthProvider();
+// const provider = new GoogleAuthProvider();
 
 function LoginPage() {
-  const user = useContext(Auth.Context)
-  if (user) return (<Navigate to='/' />)
+  return (<Navigate to='/' />)
 
   function signIn() {
     signInWithPopup(getAuth(), provider)

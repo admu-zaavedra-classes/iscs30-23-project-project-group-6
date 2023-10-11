@@ -10,8 +10,8 @@ import Timetable from '../../components/timetable'
 import Card from '../../components/class-card';
 
 function HomePage() {
-  const user = useContext(Auth.Context)
-  if (!user) return <Navigate to="/login" />
+  // const user = useContext(Auth.Context)
+  // if (!user) return <Navigate to="/login" />
 
   return (
     <>

@@ -6,7 +6,7 @@ import Header from '../../components/header/index';
 import MobileHeader from '../../components/mobile-header/index';
 
 function PageLayout() {
-  const user = useContext(Auth.Context)
+  //const user = useContext(Auth.Context)
   const screenWidth = 1160;
   const [isMobile, setIsMobile] = useState(window.innerWidth < screenWidth);
   const handleResize = () => {
@@ -18,7 +18,7 @@ function PageLayout() {
     return () => window.removeEventListener('resize', handleResize);
   });
 
-  if (!user) return <Navigate to="/login" />
+  //if (!user) return <Navigate to="/login" />
 
   return (
     <>
