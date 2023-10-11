@@ -1,4 +1,4 @@
-FROM node:8.1.2
+FROM node:18.18.1 
 
 WORKDIR /usr/src/
 
