@@ -1,4 +1,4 @@
-FROM node:18.10.0-alpine3.14
+FROM node:8.1.2
 
 WORKDIR /home/swailem_lumba/iscs30-23-project-project-group-6/ateneo-one-big-app
 
