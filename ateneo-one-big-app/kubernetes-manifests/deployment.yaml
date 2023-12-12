@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aoba-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aoba
+  template:
+    metadata:
+      labels:
+        app: aoba
+    spec:
+      containers:
+      - name: aoba-container
+        image: keidare/aoba:v1
+        ports:
+        - containerPort: 8080
