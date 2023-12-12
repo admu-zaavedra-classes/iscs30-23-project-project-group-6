@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: aoba-container
-        image: keidare/aoba:v1
+        image: keidare/aoba:v2
         ports:
-        - containerPort: 8080
+        - containerPort: 4173

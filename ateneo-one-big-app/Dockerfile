@@ -17,7 +17,8 @@ COPY . .
 
 
 
-EXPOSE 8080
+EXPOSE 4173
+RUN npm run build
 
-CMD [ "npm", "run" ,"dev"] 
+CMD [ "npm", "run" ,"preview"] 
 
