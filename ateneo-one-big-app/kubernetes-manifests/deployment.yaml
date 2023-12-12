@@ -6,11 +6,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: aoba
+      app: aoba-deployment
   template:
     metadata:
       labels:
-        app: aoba
+        app: aoba-deployment
     spec:
       containers:
       - name: aoba-container
