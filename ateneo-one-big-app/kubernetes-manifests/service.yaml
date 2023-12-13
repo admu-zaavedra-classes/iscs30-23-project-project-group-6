@@ -7,6 +7,6 @@ spec:
     app: aoba-deployment
   ports:
     - protocol: TCP
-      port: 4173
-      targetPort: 4173
+      port: 80
+      targetPort: 5173
   type: LoadBalancer

@@ -15,4 +15,4 @@ spec:
           service:
             name: aoba-service
             port:
-              number: 4173
+              number: 80

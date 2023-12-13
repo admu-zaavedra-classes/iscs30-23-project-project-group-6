@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: aoba-container
-        image: keidare/aoba:v2
+        image: keidare/aoba:v3
         ports:
-        - containerPort: 4173
+        - containerPort: 5173
